@@ -3,9 +3,17 @@ const enter = document.querySelector("button");
 const input = document.querySelector("input");
 let gridSize = 0;
 
+function clearGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.lastChild);
+    }
+
+}
+
 function drawGrid() {
+    clearGrid();
     const temp = parseInt(input.value);
-    if (temp < 100) {
+    if (temp <= 100) {
         gridSize = temp;
     }
     for (let i=0; i<gridSize; i++) {
