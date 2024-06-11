@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    margin: 4px;
+}
+
+.container {
+    background-color: #a2a2eb;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.square {
+    box-sizing: border-box;
+    background-color: #151551;
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.item {
+    background-color: #0e0b28;
+    padding: 10px 10px;
+    width: 50%;
+    height: 50%;
+}
